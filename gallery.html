@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>My digital portfolio - Gallery</title>
+    <meta name="viewport" content="width=device-width,initial=1.0">
+    <link rel="stylesheet" type="text/css" href="visuals.css">
+    <link rel="icon" type="png" href="Logo.png">
+</head>
+<style>
+
+body {
+  background-color: #625A66;
+}
+
+.opening{
+    position:absolute;
+    top: 400px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.box06{
+    width: 100px;
+    height: 150px;
+    background-color:blue;
+    position: absolute;
+    top: 1200px;
+    left: 450px;
+    z-index: 4;
+}
+@keyframes slide {
+    from {transform: translateX(0); }
+    to { transform: translateX(200px); }
+}
+.box06.move { animation: slide 2s forwards;}
+button {
+    position: absolute;
+    top: 1350px;
+    left: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 4;
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    position: absolute;
+    top: 700px;
+    left: 200px;
+    width: 1500px;
+    z-index: 3;
+    height: 450px;
+}
+div.scroll-container img {
+    padding: 10px;
+    width: 600px;
+    height: 550px; 
+}
+
+</style>
+<body>
+    <div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo" width="100" height="150"></a>
+    </div>
+
+    <div class="navbar">
+        <ul class="topnav">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li><a href="programming.html">Programming</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="Data base.html">Data base</a></li>
+            <li><a href="Threats.html">Threats</a></li>
+            <li><a href="Contact me.html">Contact me</a></li>
+            
+        </ul>
+    </div>
+<div class="welcome">
+    <h1 class="h1">This is the gallery page which has pictures of my work that I have done on my course.</h1>
+</div>
+<div class="opening">
+    <p class="p">In these images I am showing you PC upgrade process. The images shows every part of the PC including the RAM, SSD, hard drive and many more. The images show each hardware and component inside the computer and how everything fits together.</p>
+    <p class="p">These images are showing my work i have done on my assignment for the PC upgrade unit. In this unit i needed to install hardware in the computer and follow the client's requirements.</p>
+</div>
+
+<div class="scroll-container">
+    <img src="base.jpg" alt="computer base"
+ width="600" height="400">
+<img src="pc.jpg" alt="pc"
+    width="600" height="400">
+<img src="inside view.jpg" alt="inside the pc"
+    width="600" height="400">
+<img src="ssd.jpg" alt="SSD"
+    width="600" height="400">
+<img src="ram.jpg" alt="Ram"
+    width="600" height="400">
+</div>
+<div class="box06" id="b"></div>
+    <button onclick="b.classList.add('move')">Play</button>
+</div>
+</body>
+
+
+
+</html>

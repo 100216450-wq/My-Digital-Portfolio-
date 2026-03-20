@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My digital portfolio - Hardware</title>
+    <meta name="viewport" content="width=device-width,initial=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="visuals.css">
+    <link rel="icon" type="png" href="Logo.png">
+</head>
+<style>
+
+body {
+  background-color: #625A66;
+} 
+
+s.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    left: 250px;
+    top: 900px;
+    margin-bottom: 40px;
+    z-index: 3;
+
+}
+
+.ram {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    left: 600px;
+    top: 900px;
+    margin-bottom: 40px;
+    z-index: 3;
+}
+
+.image1{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 670px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ram {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    left: 900px;
+    top: 550px;
+    margin-bottom: 40px;
+    z-index: 3;
+}
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 670px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.ram:hover .overlay2 {
+  opacity: 2;
+}
+
+.welcome{
+    position:absolute;
+    top: 700px;
+    left: 200px;
+    width: 80%;
+    height: 200px;
+    z-index: 2;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.context1{
+    position:absolute;
+    top: 300px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    z-index: 7;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.context2{
+    position:absolute;
+    top: 300px;
+    left: 700px;
+    width: 400px;
+    height: 400px;
+    z-index: 8;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    left: 250px;
+    top: 900px;
+    margin-bottom: 40px;
+    z-index: 3;
+
+}
+
+.ram {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    left: 600px;
+    top: 900px;
+    margin-bottom: 40px;
+    z-index: 3;
+}
+
+.image1{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 670px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ram {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    left: 900px;
+    top: 550px;
+    margin-bottom: 40px;
+    z-index: 3;
+}
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 670px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.box04{
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 1200px;
+    background: red;
+    position: absolute;
+    animation: moveBox 4s infinite;
+    z-index: 4;
+}
+
+@keyframes moveBox {
+    0% {left: 1600px;; top:300px; background:red; }
+    25% {left:1200px; top:600px; background:yellow;}
+    50% {left:1600px; top:300px; background:blue; }
+    75% {left:1200px; top:600px; background:green;}
+    100% {left:1600px; top:300px; background:red;}
+}
+
+.box04.move { animation: slide 2s forwards;}
+button {
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 5;
+}
+</style>
+<body>
+<div class="container">
+    <img src="ssd.jpg" alt="SSD" class="image1">
+    <div class="overlay1">
+        <div class="text1">This is a SSD that refers to solid state drive.</div>
+    </div>
+</div>
+<div class="ram">
+    <img src="ram.jpg" alt="RAM" class="image2">
+    <div class="overlay2">
+        <div class="text2">This is RAM that refers to random access memory.</div>
+    </div>
+</div>
+
+<div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo" width="100" height="150"></a>
+    </div>
+
+    <div class="navbar">
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li><a href="programming.html">Programming</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="hardware.html">Hardware</a></li>
+            <li><a href="Data base.html">Data base</a></li>
+            <li><a href="Threats.html">Threats</a></li>
+            <li><a href="Contact me.html" >contact me</a></li>
+        </ul>
+    </div>
+<div class="welcome">
+    <h1 class="h1">This is the hardware page that shows different types of hardware - PC upgrade unit.</h1>
+</div>
+<div class="context1">
+    <h2 class="h2">Information about the SSD and the upgrade process:</h2>
+    <p class="p">The SSD stands for solid state drive, which is used for storage and gives the computer more storage. An amazing fact; the SSD is that it has no fan unlike the hard disk drive and this causes the SSD to heat up and break more easier. However the SSD is much smaller and this makes it easily to install into the computer.</p>
+    <p class="p">SSDs are commonly used in modern computers as it fits more comfortable in computers, and it helps to the computer to use less space; so that the computer can add more hardware and components that would improve the user performance and quality.</p>
+</div>
+<div class="context2">
+    <h2 class="h2">Information about the RAM and the upgrade process:</h2>
+    <p class="p">The RAM stands for random access memory, which is used to improve the memory and performance of computers. An amazing fact; is that some ram sticks are different and if I got the wrong ram stick then the RAM will be compatible with the computer.</p>
+    <p class="p">RAM allows the user to open more applications at once. Also this improves the performance and quality of the computer to handle more demanding tasks.</p>
+</div>
+<div class="box04"></div>
+</body>
+</html>

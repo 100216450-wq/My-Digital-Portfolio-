@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My digital portoflio - About me</title>
+    <meta name="viewport" content="width=device-width,initial=1.0">
+    <link rel="stylesheet" type="text/css" href="visuals.css">
+    <link rel="icon" type="png" href="Logo.png">
+</head>
+<style>
+
+body {
+  background-color: #625A66;
+}
+
+.shape{
+    width: 100px;
+    height: 200px;
+    background-color:blue;
+    position: absolute;
+    top: 850px;
+    left: 300px;
+    z-index: 4;
+}
+@keyframes slide {
+    from {transform: translateX(0); }
+    to { transform: translateX(200px); }
+}
+.shape.move { animation: slide 2s forwards;}
+button {
+    position: absolute;
+    top: 1050px;
+    left: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 4;
+}
+
+.pc{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 600px;
+    height: 700px;
+    z-index: 3;
+}
+
+.Hobbies{
+    position:absolute;
+    top: 300px;
+    left: 900px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.skills02{
+    position:absolute;
+    top: 450px;
+    left: 900px;
+    width: 400px;
+    height: 300px;
+    z-index: 6;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.strengths {
+    position:absolute;
+    top: 570px;
+    left: 900px;
+    width: 400px;
+    height: 400px;
+    z-index: 7;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.weaknesses {
+    position:absolute;
+    top: 870px;
+    left: 900px;
+    width: 400px;
+    height: 400px;
+    z-index: 8;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+</style>
+<body>
+    <div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo" width="100" height="150"></a>
+    </div>
+
+    <div class="navbar">
+        <ul class="topnav">
+            <li><a href="Index.html">Home</a></li>
+            <li><a class="active" href="about me.html">About me</a></li>
+            <li><a href="programming.html">Programming</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="Data base.html">Data base</a></li>
+            <li><a href="Threats.html">Threats</a></li>
+            <li><a href="Contact me.html">Contact me</a></li>
+
+        </ul>
+    </div>
+ <div class="welcome">
+<h1 class="h1"> Welcome to the about me page.</h1>
+</div>
+
+<div class="shape" id="b"></div>
+    <button onclick="b.classList.add('move')">Play</button>
+</div>
+<div class="pc">
+    <a href="gallery.html"><img src="pc.jpg" alt="pc" width="400" height="500">
+</div>
+
+<div class="Hobbies">  
+<h2 class="h2">My hobbies</h2>
+<ul>
+<li class="li">Going to the gym</li>
+<li class="li">Playing video games</li>
+<li class="li">Swimming</li>
+<li class="li">Listening to music</li>
+<li class="li">Fitness</li>
+</ul>
+</div>
+
+<div class="skills02">
+<h2 class="h2">My skills</h2>
+<ul>
+<li class="li">Teamwork</li>
+<li class="li">Problem Solving</li>
+<li class="li">Good Communication</li>
+</ul>
+</div>
+
+<div class="strengths">
+<h2 class="h2">My strengths</h2>
+<p class="p">One of strengths is that i'm a quick learner when it comes to programming and new things in computing.</p>
+<p class="p">Second strength is i can work with other people effectively and work as a team.</p>
+<p class="p">another strength is that i meet the deadlines and work well under pressure.</p>
+<p class="p">The last strength is that i always put maximum effort in my work, to show my dedication in all of my work.</p>
+</div>
+<div class="weaknesses">
+<h2 class="h2">My weaknesses</h2>
+<p class="p">One of weaknesses is that i find it difficult to manage my time with work and revision in my personal time and at college.</p>
+<p class="p">Second weakness i dont work well with people that don't seem interested in working or working with others.</p>
+<p class="p">Another weakness is that i find it hard to plan things if theres not enough time or if arrangements arrive last minute.</p>
+<p class="p">the last weakness is i'm a bit shy when it comes to meeting new people and this could affect the overall performance and grade.</p>
+</div>
+</body>
+</html>

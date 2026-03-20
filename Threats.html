@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My digital portfolio - Threats</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="visuals.css">
+         <link rel="icon" type="png" href="Logo.png">
+    </head>
+<style>
+
+body {
+  background-color: #625A66;
+}
+
+.programs{
+    position:absolute;
+    top: 700px;
+    left: 200px;
+    width: 500px;
+    height: 1000px;
+    z-index: 6;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 200px;
+    background: red;
+    position: absolute;
+    animation: moveBox 4s infinite;
+    z-index: 4;
+}
+
+@keyframes moveBox {
+    0% {left: 200px;; top:500px; background:red; }
+    25% {left:600px; top:500px; background:yellow;}
+    50% {left: 200px; top:500px; background:blue; }
+    75% {left: 600px; top:500px; background:green;}
+    100% {left:200px; top:500px; background:red;}
+}
+
+.square.move { animation: slide 2s forwards;}
+button {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 5;
+}
+
+
+</style>
+<body>
+    <div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo" width="100" height="150"></a>
+    </div>
+
+    <div class="navbar">
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li><a href="programming.html">Programming</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="Data base.html">Data base</a></li>
+            <li><a class="active" href="Threats.html">Threats</a></li>
+            <li><a href="Contact me.html" >contact me</a></li>
+        </ul>
+    </div>
+<div class="welcome">
+    <h1 class="h1">Welcome to the threats page</h1>
+</div>
+<div class="programs">
+    <h2 class="h2">Malware:</h2>
+    <p class="p">Malware is caused by clicking on phishing emails that carry different types of dangerous software that causes massive problems for the user. Malware can spread through shared files or using the same network, this causes other users devices to get infected with malware. If the computer isn't protected by a firewall then the computer is at risk of losing sensitive data.</p>
+    <h2 class="h2">Ransomware</h2>
+    <p class="p">Ransomware is a dangerous threat that could cause the users data to be stolen and then the user has to pay the ransom to get back that data for a large amount of money. Ransomware could be prevented by doing regular backups on the computer this makes copies of the sensitive information so that the user doesn't have to pay the ransom. Backups are stored an external drive to keep the data safe if the users system gets attacked. </p>
+    <h2 class="h2">iruses</h2>
+    <p class="p">Viruses are the most dangerous threat that could happen to a computer if it becomes infected because when the virus is already in the computer it can't be fixed and when the infected computer sends a file or sharing a network it will spread onto other devices and cause big problems with the computer.</p>
+    <h2 class="h2">Spyware</h2>
+    <p class="p">Spyware is rarely seen but it is a dangerous threat because spyware collects passwords and information that is sent to the attacker so they can use it for personal gain and gain unauthorized data.</p>
+    <h2 class="h2">USB sticks</h2>
+    <p class="p">USB sticks can carry the most dangerous software that will install vriuses and other malware onto the computer and give the attacker full access to the computer. To prevent this use a firewall that blocks all of the ports to make sure that no dangerous threats try to plug in the computer pors.</p>
+</div>
+<div class="square"></div>
+</body>
+</html>

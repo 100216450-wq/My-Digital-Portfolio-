@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>My digital portoflio - Home</title>
+    <meta name="viewport" content="width=device-width,initial=1.0">
+    <link rel="stylesheet" type="text/css" href="visuals.css">
+    <link rel="icon" type="png" href="Logo.png">
+</head>
+<style>
+
+body {
+  background-color: #625A66;
+}
+
+.base{
+    position: absolute;
+    top:600px;
+    left: 900px;
+    width: 600px;
+    height: 700px;      
+    z-index: 5;
+
+}
+
+.pie{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    top: 1150px;
+    left: 250px;
+    z-index: 7;
+}
+@keyframes slide {
+    from {transform: translateX(0); }
+    to { transform: translateX(600px); }
+}
+.pie.move{ animation: slide 3s forwards;}
+button {
+    position: absolute;
+    top: 1300px;
+    left: 250px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 7;
+}
+
+.main{
+    position: absolute;
+    top: 350px;
+    left: 210px;
+    width: 80%;
+    height: 300px;
+    z-index: 3;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.goals{
+    position: absolute;
+    left: 210px;
+    top: 600px;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    color: rgb(117, 28, 117);
+    z-index: 4;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.extracontent{
+    position: absolute;
+    left: 480px;
+    top: 600px;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    color: rgb(117, 28, 117);
+    z-index: 4;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.audio-container{
+    position:absolute;
+    top: 1500px;
+    left: 250px;
+    width: 400px;
+    height: 400px;
+    z-index: 4;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+</style>
+<body>
+    <div class="pie" id="b"></div>
+    <button onclick="b.classList.add('move')">Play</button>
+
+    <div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo" width="100" height="150"></a>
+    </div>
+
+<div class="navbar">
+    <ul class="topnav">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about me.html">About me</a></li>
+        <li><a href="programming.html">Programming</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="hardware.html">Hardware</a></li>
+        <li><a href="Data base.html">Data base</a></li>
+        <li><a href="Threats.html">Threats</a></li>
+        <li><a href="Contact me.html" >contact me</a></li>
+   </ul>
+</div>
+
+
+<div class="welcome">
+<h1 class="h1">Welcome to my digital portfolio: Created By Adam Bradley</h1>
+</div>
+
+<div class="main">
+<h2 class="h2">This website includes a about me page, Hardware page, Contact Me page, gallery page, programming page, threats page, and a database page that shows all my past assignments and units.</h2>
+<p class="p">The main purpose of this page is to show what each page is shows and what information will be shown.</p>
+
+<p class="p">This website is to show my digital portfolio and some of my work I have done on my computing units.</p>
+<p class="p"></p>
+</div>
+
+<div class="goals">
+<h2 class="h2">My goals for the future:</h2>
+<p class="p"> My goals are achieving a qualification in level 3 computing and then getting apprenticeship.</p>
+<h2 class="h2">About Me page:</h2>
+<ul>
+<li class="li">Hobbies</li>
+<li class="li">My interests</li>
+<h2 class="h2">Gallery page:</h2>
+<li class="li">Hardware</li>
+<li class="li">Programming</li>
+<h2 class="h2">Database page:</h2>
+<li class="li">Completed assignments</li>
+<li class="li">My units</li>
+</ul>
+</div>
+
+<div class="extracontent">
+<h2 class="h2">Hardware page:</h2>
+<ul>
+<li class="li">SSD</li>
+<li class="li">RAM</li>
+</ul>
+<h2 class="h2">Gallery page:</h2>
+<ul>
+<li class="li">Base</li>
+<li class="li">hardware</li>
+<li class="li">different types of programs</li>
+</ul>
+<h2 class="h2">Programming page:</h2>
+<ul>
+<li class="li">Different programming languages</li>
+</ul>
+<h2 class="h2">Threats page:</h2>
+<ul>
+<li class="li">Viruses and more</li>
+</ul>
+</div>
+
+<div class="base">
+    <a href="gallery.html"><img src="base.jpg" alt="Image" width="400" height="500"></a>
+</div>
+
+<div class="audio-container">
+<audio controls>
+    <source src="Sound.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+
+
+</body>
+</html>
+
+
+

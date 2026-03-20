@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My digital portfolio - Programming</title>
+        <meta name="viewport" content="width=device-width,initial=1.0">
+        <link rel="stylesheet" type="text/css" href="visuals.css">
+        <link rel="icon" type="png" href="Logo.png">
+     </head>
+<style>
+
+body {
+  background-color: #625A66;
+}
+
+.welcome{
+    position:absolute;
+    top: 150px;
+    left: 200px;
+    width: 80%;
+    height: 200px;
+    z-index: 2;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.languages{
+    position:absolute;
+    top: 1100px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    z-index: 4;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.start{
+    position:absolute;
+    top: 950px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.colorshape{
+    width: 100px;
+    height: 100px;
+    top: 1500px;
+    left: 450px;
+    background: red;
+    position: relative;
+    animation: moveBox 4s infinite;
+    z-index: 8;
+}
+
+@keyframes moveBox {
+    0% {left: 200px;; top:1500px; background:red; }
+    25% {left:800px; top: 1500px; background:yellow;}
+    50% {left:800px; top:1500px; background:blue; }
+    75% {left:200px; top: 1500px; background:green;}
+    100% {left:800px; top:1500px; background:red;}
+}
+
+.colorshape.move { animation: slide 2s forwards;}
+button {
+    position: absolute;
+    top: 1500px;
+    left: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 9;
+}
+
+.image01, .gallery{
+    position: absolute;
+    top: 350px;
+    width: 500px;
+    height: 600px;
+    z-index: 10;
+}
+
+.image01 {left: 200px;}
+.gallery {left: 1000px;}
+
+.gallery-img{
+    width: 600px;
+    height: 500px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 12;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    z-index: 11;
+}
+
+body {font-family: Tahoma, sans-serif;}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+<body>
+   <div class="logo">
+<a href="index.html"><img src="Logo.png" alt="Logo" width="100" height="150"></a>
+    </div>
+
+    <div class="navbar">
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li><a class="active" href="programming.html">Programming</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="Data base.html">Data base</a></li>
+            <li><a href="Threats.html">Threats</a></li>
+            <li><a href="Contact me.html" >contact me</a></li>
+        </ul>
+    </div>
+    <div class="welcome">
+        <h1 class="h1"> This is the programming page that has all my programming languages and code that i used on my course and my units.</h1>
+
+    </div>
+    <div class="languages">
+         <h2 class="h2"> On the left shows an image of my Python work for unit python.</h2>
+         <p class="p">The python image shows basic python coding that i used to help me to learn the language.</p>
+         <h2 class="h2"> On the right shows an image of my CSS work for unit 3 and unit 13.</h2>
+         <p class="p">The CSS image shows CSS code that i used to practice my skills on creating a website.</p>
+    </div>
+    <div class="start">
+        <p class="p">On this page i have included all my programming work that i have done on my course. This includes all the programming languages that i have used and all the different projects that i have done in each programming language. The programming languages i have used are CSS, JavaScript and python.</p>
+    </div>
+
+<div class="colorshape"></div>
+
+<div class="image01">
+<img id="css"  class="gallery-img" src="css.jpg" alt="CSS">
+</div>
+
+<div class="gallery">
+<img id="python" class="gallery-img" src="python.jpg" alt="Python">
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script>
+var modal = 
+document.getElementById("myModal");
+var img = document.getElementById("css");
+var modalImg =
+document.getElementById("img01");
+var captionText = 
+document.getElementById("caption");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span =
+document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+var modal = 
+document.getElementById("myModal");
+var img = document.getElementById("python");
+var modalImg =
+document.getElementById("img01");
+var captionText = 
+document.getElementById("caption");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span =
+document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+</body>
+</html>
